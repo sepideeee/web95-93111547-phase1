@@ -1,0 +1,218 @@
+body {
+  margin-top: 0;
+  padding-top: 15%;
+  border-radius: 30px;
+  background-image: radial-gradient(
+                  #19194d,
+                  #8c8cd9
+  );
+}
+
+.border {
+
+  background-color: #51A59C;
+}
+
+h1 {
+  text-align: center;
+}
+
+.navbar {
+  position: fixed;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #0C655C;
+  text-align: center;
+  .navpic {
+    border-color: #333333;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+    width: 15%;
+
+
+  }
+
+}
+
+.fix {
+  clear: both;
+  display: block;
+}
+
+.left {
+  display: inline-block;
+  float: left;
+  margin-left: 20%;
+  margin-top: 15%;
+  clear: left;
+}
+
+.right {
+  display: inline-block;
+  float: right;
+  margin-right: 20%;
+  margin-top: 20%;
+  clear: right;
+}
+
+.square {
+  background: -webkit-linear-gradient(left, #E56251, #FFC17D); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #E56251, #FFC17D); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #E56251, #FFC17D); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #E56251, #FFC17D);
+  padding: 10px;
+  width: 25%;
+  height: 20%;
+  border-radius: 10px;
+  color: brown;
+
+}
+
+.btn {
+  display: inline-block;
+  background-color: #5590A7;
+  float: left;
+  color: #104E66;
+  border: 2px solid #1F6783;
+  border-radius: 5px;
+  text-align: center;
+  height: 4%;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 5px;
+  margin-top: 10px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.btn:hover {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.24), 0 30px 100px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cmt {
+  float: right;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+
+}
+
+.line {
+  top: 0;
+  background-color: #E56251;
+  content: " ";
+  width: 10px;
+  position: absolute;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.time1 {
+  position: absolute;
+  left: 43%;
+  top: 100px;
+  background-color: whitesmoke;
+  padding: 20px;
+  z-index: 99 !important;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.time1:hover {
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.24), 0 30px 100px 0 rgba(0, 0, 0, 0.19);
+}
+
+.time2 {
+  position: absolute;
+  left: 47%;
+  top: 1300px;
+  background-color: whitesmoke;
+  padding: 20px;
+  z-index: 99 !important;
+  border-radius: 10px;
+  font-size: 25px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.time2:hover {
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.24), 0 30px 100px 0 rgba(0, 0, 0, 0.19);
+}
+
+.time3 {
+  position: absolute;
+  left: 45%;
+  top: 2400px;
+  background-color: whitesmoke;
+  padding: 20px;
+  z-index: 99 !important;
+  border-radius: 10px;
+  font-size: 25px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.time3:hover {
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.24), 0 30px 100px 0 rgba(0, 0, 0, 0.19);
+}
+
+.top, .bottom, .leftdiv, .rightdiv {
+  background: white;
+  position: fixed;
+}
+
+.rightdiv, .leftdiv {
+  top: 0;
+  bottom: 0;
+  width: 30px;
+}
+
+.leftdiv {
+  left: 0;
+}
+
+.rightdiv {
+  right: 0;
+}
+
+.top, .bottom {
+  left: 0;
+  right: 0;
+  height: 30px;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+hr {
+  border: dotted 0.5rem #E56251;
+  margin-top: 1%;
+  width: 4%;
+  position: absolute;
+  left: 45%;
+  z-index: -1 !important;
+
+}
+
+.sec {
+  left: 50%;
+}

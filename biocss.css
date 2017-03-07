@@ -1,0 +1,242 @@
+body {
+  background-color: black;
+  color: #333333;
+  font-family: "Comic Sans MS", cursive, sans-serif; }
+
+.about1 {
+  background-color: crimson; }
+
+.navbar {
+  z-index: 99;
+  height: 20%;
+  weight: auto; }
+  .navbar ul {
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: antiquewhite;
+    opacity: 0.5; }
+    .navbar ul li {
+      float: left; }
+      .navbar ul li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 40px; }
+      .navbar ul li a:hover:not(.active) {
+        background-color: white; }
+
+.header {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 0;
+  font-family: Apple Chancery, cursive; }
+
+.header2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  text-align: center; }
+
+.img-circle {
+  border-color: #333333;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 50%;
+  height: 50vh;
+  weight: 50vw;
+  float: left; }
+
+.img-circle:hover {
+  filter: drop-shadow(10px 10px 15px #333333); }
+
+.text1 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  height: 11vh;
+  padding-left: 6vw;
+  padding-right: -1vw;
+  vertical-align: middle;
+  top: 50%;
+  margin-top: 16vh;
+  box-sizing: border-box;
+  font-size: 1.2vw;
+  margin-left: 6vw; }
+
+.float {
+  overflow: auto; }
+
+hr {
+  border: solid 2px #333333;
+  text-align: center;
+  width: 65%; }
+
+.about {
+  margin: 30px;
+  background-color: #d1d1e0;
+  background: -webkit-linear-gradient(left, darkslateblue, #d1d1e0);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, darkslateblue, #d1d1e0);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, darkslateblue, #d1d1e0);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, darkslateblue, #d1d1e0);
+  height: 70vh;
+  border: #333333 5px solid;
+  border-radius: 30px;
+  margin-top: 10%;
+  padding: 20px; }
+
+.squareimg {
+  margin-top: 40px;
+  height: 32vh;
+  border: solid 5px white; }
+
+a .squareimg:not(:hover) {
+  filter: blur(5px); }
+
+.photos {
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #cce6ff;
+  background: -webkit-linear-gradient(left, darkcyan, #cce6ff);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, darkcyan, #cce6ff);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, darkcyan, #cce6ff);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, darkcyan, #cce6ff);
+  height: 60vh;
+  border: darkslategray 5px solid;
+  margin-top: 4%;
+  border-radius: 30px;
+  overflow: auto;
+  margin: 30px;
+  color: darkslategrey; }
+
+.resume {
+  background: -webkit-linear-gradient(left, blueviolet, #ecc6ec);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, blueviolet, #ecc6ec);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, blueviolet, #ecc6ec);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, blueviolet, #ecc6ec);
+  background-color: #ecc6ec;
+  border: #732673 5px solid;
+  margin-top: 4%;
+  border-radius: 30px;
+  height: 50vh;
+  margin: 30px;
+  padding: 2%;
+  color: #732673; }
+
+h2 {
+  font-size: 2vw;
+  margin-top: 0;
+  margin-right: 3vw;
+  margin-bottom: 0;
+  float: left;
+  color: #732673; }
+
+.item {
+  margin-top: 0;
+  font-size: 1.2vw;
+  float: left;
+  color: #732673;
+  margin-right: 5vw; }
+
+.rsch {
+  float: left;
+  margin-right: 3vw;
+  padding-right: 0; }
+
+.skl {
+  float: left;
+  margin-bottom: -8%; }
+
+.social {
+  float: left;
+  top: 0; }
+
+.button1 {
+  color: #732673;
+  font-family: "Berlin Sans FB";
+  border: transparent;
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  margin-left: 20px;
+  margin-top: 25px; }
+
+.button1:hover {
+  box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.24), 0 30px 100px 0 rgba(0, 0, 0, 0.19); }
+
+.empty::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.fix {
+  margin: 20px; }
+
+ul.social-network {
+  list-style: none; }
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px; }
+
+a.icoLinkedin:hover {
+  background-color: #007bb7; }
+
+.social-network a.icoGoogle:hover {
+  background-color: #BD3518; }
+
+.social-network a.icoInstagram:hover {
+  background-color: #3f729b; }
+
+.social-network a.icoGoogle:hover i, a.icoInstagram:hover i, a.icoLinkedin:hover i {
+  color: #fff; }
+
+.social-circle li a {
+  border-radius: 50%;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  line-height: 70px;
+  color: #732673;
+  display: inline-block; }
+
+.social-circle li a:hover i, .triggeredHover {
+  transform: rotate(360deg);
+  transition: all 0.5s; }
+
+.email {
+  color: #333333;
+  text-align: right;
+  text-decoration: none; }
+
+.phone {
+  padding-left: 75%;
+  font-size: 25px;
+  color: #333333;
+  font-weight: 800; }
+
+/*# sourceMappingURL=biocss.css.map */
