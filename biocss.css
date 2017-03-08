@@ -1,15 +1,17 @@
 body {
-  background-color: black;
+  background-image: radial-gradient(#19194d, #8c8cd9);
   color: #333333;
-  font-family: "Comic Sans MS", cursive, sans-serif; }
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  padding: 0;
+  margin: 0; }
 
 .about1 {
   background-color: crimson; }
 
 .navbar {
   z-index: 99;
-  height: 20%;
-  weight: auto; }
+  height: 10%;
+  margin: 0; }
   .navbar ul {
     list-style-type: none;
     position: fixed;
@@ -28,20 +30,20 @@ body {
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 40px; }
+        font-size: 1.5rem; }
       .navbar ul li a:hover:not(.active) {
         background-color: white; }
 
 .header {
   text-align: center;
-  font-size: 50px;
+  font-size: 3rem;
   margin-bottom: 0;
-  font-family: Apple Chancery, cursive; }
+  margin-top: 0; }
 
 .header2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 30px;
+  font-size: 2rem;
   text-align: center; }
 
 .img-circle {
@@ -49,37 +51,60 @@ body {
   border-width: 10px;
   border-style: solid;
   border-radius: 50%;
-  height: 50vh;
-  weight: 50vw;
-  float: left; }
+  height: 20rem; }
+  @media screen and (min-width: 720px) {
+    .img-circle {
+      margin-left: 20%; } }
+  @media screen and (min-width: 1080px) {
+    .img-circle {
+      float: left;
+      margin-left: 0; } }
+  @media screen and (min-width: 1920px) {
+    .img-circle {
+      width: 40%; } }
 
 .img-circle:hover {
   filter: drop-shadow(10px 10px 15px #333333); }
 
 .text1 {
-  font-family: Verdana, Geneva, sans-serif;
-  font-weight: 700;
+  font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
   text-align: center;
   height: 11vh;
-  padding-left: 6vw;
   padding-right: -1vw;
   vertical-align: middle;
-  top: 50%;
-  margin-top: 16vh;
   box-sizing: border-box;
   font-size: 1.2vw;
   margin-left: 6vw; }
+  @media screen and (min-width: 720px) {
+    .text1 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      padding-left: 2vw;
+      padding-right: 2rem;
+      top: 0; } }
+  @media screen and (min-width: 1080px) {
+    .text1 {
+      padding-left: 6vw;
+      margin-top: 16vh;
+      font-size: 1rem; } }
+  @media screen and (min-width: 1920px) {
+    .text1 {
+      font-size: 1.6rem;
+      margin-top: 10vh; } }
 
 .float {
   overflow: auto; }
 
 hr {
-  border: solid 2px #333333;
+  border: solid 0.05rem #333333;
   text-align: center;
-  width: 65%; }
+  width: 50%; }
 
 .about {
-  margin: 30px;
+  margin: 3rem;
   background-color: #d1d1e0;
   background: -webkit-linear-gradient(left, darkslateblue, #d1d1e0);
   /* For Safari 5.1 to 6.0 */
@@ -88,19 +113,33 @@ hr {
   background: -moz-linear-gradient(right, darkslateblue, #d1d1e0);
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, darkslateblue, #d1d1e0);
-  height: 70vh;
   border: #333333 5px solid;
   border-radius: 30px;
   margin-top: 10%;
   padding: 20px; }
+  @media screen and (min-width: 720px) {
+    .about {
+      height: 45rem; } }
+  @media screen and (min-width: 1920px) {
+    .about {
+      height: 45rem; } }
+  @media screen and (min-width: 1080px) {
+    .about {
+      height: 30rem; } }
 
 .squareimg {
   margin-top: 40px;
-  height: 32vh;
+  height: 12rem;
   border: solid 5px white; }
 
 a .squareimg:not(:hover) {
   filter: blur(5px); }
+  @media screen and (min-width: 1080px) {
+    a .squareimg:not(:hover) {
+      height: 12rem; } }
+  @media screen and (min-width: 1920px) {
+    a .squareimg:not(:hover) {
+      height: 20rem; } }
 
 .photos {
   padding-left: 5%;
@@ -113,13 +152,19 @@ a .squareimg:not(:hover) {
   background: -moz-linear-gradient(right, darkcyan, #cce6ff);
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, darkcyan, #cce6ff);
-  height: 60vh;
+  height: 25rem;
   border: darkslategray 5px solid;
   margin-top: 4%;
   border-radius: 30px;
   overflow: auto;
-  margin: 30px;
+  margin: 3rem;
   color: darkslategrey; }
+  @media screen and (min-width: 1080px) {
+    .photos {
+      height: 25rem; } }
+  @media screen and (min-width: 1920px) {
+    .photos {
+      height: 35rem; } }
 
 .resume {
   background: -webkit-linear-gradient(left, blueviolet, #ecc6ec);
@@ -133,10 +178,20 @@ a .squareimg:not(:hover) {
   border: #732673 5px solid;
   margin-top: 4%;
   border-radius: 30px;
-  height: 50vh;
-  margin: 30px;
+  height: 30rem;
   padding: 2%;
+  margin: 3rem;
+  font-size: 1.2rem;
   color: #732673; }
+  @media screen and (min-width: 720px) {
+    .resume {
+      height: 40rem; } }
+  @media screen and (min-width: 1080px) {
+    .resume {
+      height: 30rem; } }
+  @media screen and (min-width: 1920px) {
+    .resume {
+      height: 40rem; } }
 
 h2 {
   font-size: 2vw;
@@ -148,23 +203,32 @@ h2 {
 
 .item {
   margin-top: 0;
-  font-size: 1.2vw;
   float: left;
   color: #732673;
   margin-right: 5vw; }
+  @media screen and (min-width: 720px) {
+    .item {
+      font-size: 2vw; } }
+  @media screen and (min-width: 1080px) {
+    .item {
+      font-size: 1.2vw; } }
 
 .rsch {
   float: left;
-  margin-right: 3vw;
-  padding-right: 0; }
+  padding-right: 0;
+  padding-top: 2rem; }
+
+.sec {
+  padding-left: 14rem; }
 
 .skl {
   float: left;
-  margin-bottom: -8%; }
+  padding-top: 2rem; }
 
 .social {
-  float: left;
-  top: 0; }
+  text-align: center;
+  top: 0;
+  margin: 0; }
 
 .button1 {
   color: #732673;
@@ -234,9 +298,14 @@ a.icoLinkedin:hover {
   text-decoration: none; }
 
 .phone {
-  padding-left: 75%;
-  font-size: 25px;
+  font-size: 1rem;
   color: #333333;
   font-weight: 800; }
+  @media screen and (min-width: 720px) {
+    .phone {
+      padding-left: 30%; } }
+  @media screen and (min-width: 1080px) {
+    .phone {
+      padding-left: 75%; } }
 
 /*# sourceMappingURL=biocss.css.map */

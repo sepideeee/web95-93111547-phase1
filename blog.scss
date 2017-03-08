@@ -1,5 +1,13 @@
 body{
   padding-right: 10%;
+  @media screen and (min-width: 720px) {
+    padding-top: 10%;
+    padding-right: 20%;
+  }
+  @media screen and (min-width: 1080px) {
+
+    padding-right: 10%;
+  }
 margin: 0;
   background-image:
           radial-gradient(
@@ -15,9 +23,10 @@ h1{
 hr{
   width: 50%;
 }
+
 h3{
   text-align: center;
-  padding-left: 100px;
+  padding-left: 3rem;
   padding-top: 20px;
   margin: 0;
   display: inline-block;
@@ -26,49 +35,80 @@ p{
   padding: 10px;
 }
 
-.line{
-  top: 0;
-  background-color: brown;
-  content: " ";
-  width: 5px;
-  position: absolute;
-  left: 11%;
-  bottom: 0;
-  margin-top: 4.5%;
-  height: 44%;
 
-}
 
 ul {
-  font-size: 20px;
-  list-style-type: none;
-  margin-left: 10%;
-  margin-top: 5%;
-  padding-left: 2%;
-  padding-bottom: 5%;
-  padding-top: 5%;
-  width: 15%;
-  background: -webkit-linear-gradient(left, #E56251 , #FFC17D); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #E56251, #FFC17D); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #E56251, #FFC17D); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #E56251 , #FFC17D);
+  @media screen and (min-width: 720px) {
+    z-index: 99;
+    height: 5%;
+    margin: 0;
+    list-style-type: none;
+    position: fixed;
+    top:0;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    background: -webkit-linear-gradient(left, #E56251 , #FFC17D); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #E56251, #FFC17D); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #E56251, #FFC17D); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #E56251 , #FFC17D);
+    li{
+      float:left;
+      a{
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.5rem;
 
-  display: inline-block;
- }
+      }
+       a:hover{
+        background-color: #555;
+        color: white;
+      }
+    }
+  }
+  @media screen and (min-width: 1080px) {
+    height: auto;
+    position: relative;
+    font-size: 20px;
+    list-style-type: none;
+    margin-left: 10%;
+    margin-top: 5%;
+    padding-left: 2%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    width: 15%;
+    background: -webkit-linear-gradient(left, #E56251, #FFC17D); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #E56251, #FFC17D); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #E56251, #FFC17D); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #E56251, #FFC17D);
 
-li a {
-  display: block;
-  color: brown;
-  padding: 8px 16px;
-  text-decoration: none;
+    display: inline-block;
+    li a {
+      display: block;
+      color: brown;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #555;
+      color: white;
+    }
+  }
+  @media screen and (min-width: 1920px) {
+  width: 10%;
+
+  }
+
 }
 
 
 
-li a:hover{
-  background-color: #555;
-  color: white;
-}
+
+
 .square {
   background-color: snow;
   color: #0C655C;
@@ -94,13 +134,35 @@ img {
   float: right;
 }
 .hor{
-  width: 25%;
-  height: 30%;
+  @media screen and (min-width: 720px) {
+    width: 60%;
+    height: 70%;
+  }
+
+  @media screen and (min-width: 1080px) {
+    width: 25%;
+    height: 30%;
+  }
+
+
+
+
 }
 
 .ver{
-  width: 30%;
-  height: 25%;
+  @media screen and (min-width: 720px) {
+    width: 70%;
+    height: 60%;
+  }
+
+  @media screen and (min-width: 1080px) {
+    width: 30%;
+    height: 25%;
+  }
+
+
+
+
 }
 
 .smallimg{
@@ -108,7 +170,7 @@ img {
   height: 15%;
   border-radius: 50%;
   top:0 !important;
-  margin-right: 50px;
+  margin-right: 1rem;
   padding-right: 30px;
   float: right;
   display: inline-block;
@@ -171,6 +233,16 @@ img {
 }
 
 .toFix{
-  margin-top: -150px;
+  @media screen and (min-width: 720px) {
+ margin-top: 5%;
+  }
+
+  @media screen and (min-width: 1080px) {
+    margin-top: -10%;
+  }
+
+
+
+
 }
 

@@ -1,49 +1,93 @@
 body {
   margin: 0; }
+  @media screen and (min-width: 720px) {
+    body {
+      margin-top: 5%; } }
+  @media screen and (min-width: 1080px) {
+    body {
+      margin-top: 0; } }
 
 .whole {
   background-image: radial-gradient(#19194d, #8c8cd9);
   margin-left: 10%;
   margin-right: 10%; }
 
-ul {
-  position: fixed;
-  font-size: 2rem;
-  list-style-type: none;
-  margin-left: 0%;
-  padding-left: 2%;
-  padding-bottom: 30%;
-  padding-top: 5%;
-  bottom: 0;
-  top: 0%;
-  width: 14%;
-  background: -webkit-linear-gradient(left, #E56251, #FFC17D);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #E56251, #FFC17D);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #E56251, #FFC17D);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #E56251, #FFC17D);
-  margin-top: 0;
-  margin-bottom: 0;
-  display: inline-block; }
-
-li a {
+@media screen and (min-width: 720px) {
+  ul {
+    z-index: 99;
+    height: 5%;
+    margin: 0;
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    background: -webkit-linear-gradient(left, #E56251, #FFC17D);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #E56251, #FFC17D);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #E56251, #FFC17D);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #E56251, #FFC17D); }
+    ul li {
+      float: left; }
+      ul li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.5rem; }
+      ul li a:hover {
+        background-color: #555;
+        color: white; } }
+@media screen and (min-width: 1080px) {
+  ul {
+    position: fixed;
+    font-size: 1.2rem;
+    list-style-type: none;
+    margin-left: 0%;
+    padding-left: 2%;
+    padding-bottom: 100%;
+    padding-top: 5%;
+    bottom: 0;
+    top: 0%;
+    width: 14%;
+    background: -webkit-linear-gradient(left, #E56251, #FFC17D);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #E56251, #FFC17D);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #E56251, #FFC17D);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #E56251, #FFC17D);
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block; } }
+@media screen and (min-width: 1920px) {
+  ul {
+    width: 10%; } }
+ul li a {
   display: block;
   color: brown;
   padding: 8px 16px;
   text-decoration: none; }
-
-li a:hover {
+ul li a:hover {
   background-color: #555;
   color: white; }
 
 .toFLoat {
-  margin-left: 1%;
-  margin-right: 10%;
   margin-top: 0;
   display: inline-table;
   float: right; }
+  @media screen and (min-width: 720px) {
+    .toFLoat {
+      margin-left: 30%;
+      margin-right: 20%; } }
+  @media screen and (min-width: 1080px) {
+    .toFLoat {
+      margin-left: 1%;
+      margin-right: 10%; } }
 
 .hor {
   width: 60%;
@@ -68,18 +112,18 @@ img {
 
 h3 {
   text-align: center;
-  padding-left: 8rem;
-  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
   margin: 0;
   display: inline-block;
-  font-size: 3rem; }
+  font-size: 2rem; }
 
 .smallimg {
   width: 15%;
   height: 15%;
   border-radius: 50%;
   top: 0 !important;
-  margin-right: 50px;
+  margin-right: 2rem;
   padding-right: 30px;
   float: right;
   display: inline-block; }
